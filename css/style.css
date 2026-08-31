@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+h1 {
+    color: #1f4d3a;
+}
+
+/* Navigation bar styles */
+
+nav {
+    background-color: #1f4d3a;
+    padding: 20px;
+}
+
+nav h2 {
+    color: white;
+    display: inline;
+    margin-right: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e8f0ec;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1f4d3a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #16382a;
+}
+
+.about-school {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.about-school h2 {
+    color: #1f4d3a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-school p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* --- Academics Section --- */
+.academics-school {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #f9f9f9; /* Gives a slight contrast against the white About section */
+}
+
+.academics-school h2 {
+    color: #1f4d3a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.academics-school p {
+    max-width: 700px;
+    margin: 0 auto 40px auto; 
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Styling the list into a Flexbox row */
+.academics-school ul {
+    list-style-type: none; /* This hides the default bullet points */
+    padding: 0;
+    display: flex;         /* Turns the list into a flexible row */
+    justify-content: center; /* Centers the cards horizontally */
+    flex-wrap: wrap;       /* Allows cards to stack on smaller screens */
+    gap: 20px;             /* Adds space between the cards */
+}
+
+/* Styling the individual course cards */
+.academics-school li {
+    background-color: white;
+    color: #1f4d3a;
+    font-weight: bold;
+    padding: 30px 20px;
+    width: 220px;
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a soft drop shadow */
+}
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+    /* Center the navigation and stack the logo above the links */
+    nav {
+        text-align: center;
+        padding: 15px;
+    }
+    
+    nav h2 {
+        display: block; 
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    /* Shrink the giant hero text so it fits on a phone screen */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    /* Reduce the massive padding in the about section */
+    .about-school {
+        padding: 40px 15px; 
+    }
+}
